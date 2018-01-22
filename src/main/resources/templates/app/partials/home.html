@@ -1,0 +1,177 @@
+
+<div class="section">
+
+    <div class="container">
+
+      <form class="form-horizontal" ng-submit="submitStudnetForm()" role="form">
+              <div class="form-group">
+               <label for="firstName" class="col-sm-3 control-label">Anrede</label>
+            
+            <div class="col-sm-2">
+                <div class="radio">
+                    <label><input value="online" type="radio" name="training" ng-model="student.trainingType" />Herr</label>
+                </div>
+                <div class="radio">
+                    <label><input value="onsite" type="radio" name="training" ng-model="student.trainingType" />Frau</label>
+                </div>
+            </div>
+           
+        </div>
+        <div class="form-group">
+           <label for="lastName" class="col-sm-3 control-label">Nachname</label>
+            <div class="col-sm-4  ">
+                <input type="text" id="firstName" class="form-control" ng-model="student.firstName" />
+            </div>
+            <div class="col-sm-3"></div>
+
+        </div>
+        <div class="form-group">
+            <label for="lastName" class="col-sm-3 control-label">Vorname</label>
+            <div class="col-sm-4">
+                <input type="text" id="lastName" class="form-control" ng-model="student.lastName" />
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+        
+        <div class="form-group">
+            <label for="lastName" class="col-sm-3 control-label">Tätigkeitsfeld</label>
+            <div class="col-sm-4">
+                <input type="text" id="lastName" class="form-control" ng-required="true" ng-model="student.sfeld" />
+            </div>
+            <div class="col-sm-3"></div>
+        </div>        
+
+        <div class="form-group">
+            <label for="lastName" class="col-sm-3 control-label">Firma</label>
+            <div class="col-sm-4">
+                <input type="text" id="lastName" class="form-control" ng-required="true" ng-model="student.firma" />
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+
+        <div class="form-group">
+            <label for="lastName" class="col-sm-3 control-label">Straße</label>
+            <div class="col-sm-4">
+                <input type="text" id="lastName" class="form-control" ng-required="true" ng-model="student.strabe" />
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+
+        <div class="form-group">
+            <label for="dob" class="col-sm-3 control-label">PLZ</label>
+            <div class="col-sm-2">
+                <input type="number" id="dob" class="form-control" ng-model="student.plz" />
+            </div>
+            <div class="col-sm-7"></div>
+        </div>
+
+        <div class="form-group">
+            <label for="lastName" class="col-sm-3 control-label">Ort</label>
+            <div class="col-sm-4">
+                <input type="text" id="lastName" class="form-control" ng-required="true" ng-model="student.ort" />
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+
+        <div class="form-group">
+            <label for="lastName" class="col-sm-3 control-label">Land</label>
+            <div class="col-sm-4">
+                <input type="number" id="lastName" class="form-control" ng-required="true" ng-model="student.land" />
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+
+         <div class="form-group">
+            <label for="lastName" class="col-sm-3 control-label">Telefon</label>
+            <div class="col-sm-4">
+                <input type="number" id="lastName" class="form-control" ng-required="true" ng-model="student.Telefon" />
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+
+         <div class="form-group">
+            <label for="lastName" class="col-sm-3 control-label">Fax</label>
+            <div class="col-sm-4">
+                <input type="text" id="lastName" class="form-control" ng-required="true" ng-model="student.fax" />
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+        
+        <div class="form-group">
+            <label for="gender" class="col-sm-3 control-label">Sprache</label>
+            <div class="col-sm-2">
+                <select id="gender" class="form-control" ng-model="student.Sprache">
+                    <option value="male">Deutsch</option>
+                    <option value="female">Englisch</option>
+                </select>
+            </div>
+            <div class="col-sm-7"></div>
+        </div>
+        
+
+
+         <div class="form-group">
+            <label for="lastName" class="col-sm-3 control-label">E-Mail</label>
+            <div class="col-sm-4">
+                <input type="text" id="lastName" class="form-control" ng-required="true" ng-model="student.email" />
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+        
+
+         <div class="form-group">
+            <label for="lastName" class="col-sm-3 control-label">E-Mail Bestätigung</label>
+            <div class="col-sm-4">
+                <input type="text" id="lastName" class="form-control" ng-required="true" ng-model="student.ebest" />
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+        
+        <div class="form-group">
+            <label for="lastName" class="col-sm-3 control-label">Benutzername</label>
+            <div class="col-sm-4">
+                <input type="text" id="lastName" class="form-control" ng-required="true" ng-model="student.benutzername" />
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+
+         <div class="form-group">
+            <label for="lastName" class="col-sm-3 control-label">Kennwort</label>
+            <div class="col-sm-4">
+                <input type="text" id="lastName" class="form-control" ng-required="true" ng-model="student.Kennwort" />
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+
+          <div class="form-group">
+            <label for="lastName" class="col-sm-3 control-label">Kennwort Bestätigung</label>
+            <div class="col-sm-4">
+                <input type="text" id="lastName" class="form-control" ng-required="true" ng-model="student.Kennwortbenutname" />
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+
+        <div class="form-group">
+            
+            <div class="col-sm-9">
+               
+                <div class="radio">
+                    <label><input value="online" type="checkbox" name="training" ng-model="student.check" />Bitte informieren Sie mich über die wichtigsten Änderungen und neue
+Produkte*</label>
+                </div>
+               
+            </div>
+           
+        </div>
+        
+
+        <input type="submit" value="Registrieren" class="btn btn-primary col-sm-offset-3" />
+     
+    </form>
+
+    </div>
+    <!-- /.container -->
+
+</div>
+<!-- /.section -->
+
